@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .box-shadow-magang {
+            box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+        }
+
+        .btnslide {
+            box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="max-w-[1920px] ">
+        <!-- Bagian Navbar -->
+        <div class="flex items-center gap-2 lg:py-2  max-w-[1296px] h-[76px] mx-auto px-4 lg:px-0">
+            <img src="/assets/image/Group 2.svg" alt="" class="w-[47px] h-[44px]">
+            <h1 class="font-bold text-[20px]">Silicon</h1>
+            <ul class="lg:flex items-center gap-6 ml-8 hidden">
+                <li><a href="#ask" class="font-semibold text-slate-700 hover:text-slate-500">Courses</a></li>
+                <li><a href="#" class="font-semibold text-slate-700 hover:text-slate-500">How It Works</a></li>
+                <li><a href="#" class="font-semibold text-slate-700 hover:text-slate-500">What Students Say</a>
+                </li>
+                <li><a href="#" class=" font-semibold text-slate-700 hover:text-slate-500">Contact</a></li>
+            </ul>
+            <div class="lg:flex items-center ml-auto gap-4 hidden">
+                <a href="">
+                    <button
+                        class="flex items-center text-sm gap-2 font-semibold border-[1px] py-[9px] px-5 rounded text-[#6366F1]">
+                        <img src="/assets/icon/icon-signin.png" alt="">
+                        Sign In
+                    </button>
+                </a>
+                <a href="">
+                    <button
+                        class="flex items-center text-sm gap-2 font-semibold py-[9px] px-5 rounded bg-[#6366F1] text-white">
+                        <img src="/assets/icon/icon-signup.png" alt="">
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            <button id="dropdownButton" class="p-4 lg:hidden text-black ml-auto relative ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-6 h-6 dark:text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+
+
+                <ul id="dropdownList" class="hidden bg-white shadow-xl mt-2 w-40 rounded-2xl absolute right-0">
+                    <div class="m-1 space-y-2">
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">Courses</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">How It Works</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">What Students Say</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">Contact</a>
+                        </li>
+                        <hr>
+                        <li class="flex gap-2 w-full justify-center">
+                            <a class="text-slate-500 font-semibold hover:text-[#007A98] hover:font-bold" href="">Sign
+                                In</a>
+                            <a class="text-slate-500 font-semibold hover:text-[#007A98] hover:font-bold" href="">Sign
+                                Up</a>
+                        </li>
+                        <li>
+
+                        </li>
+                    </div>
+                </ul>
+            </button>
+        </div>
+        <!-- Akhir Bagian Navbar -->
+
+        <!-- Bagian Header -->
+        <div class="lg:h-[801px] bg-gray-200 px-4 lg:px-0 flex flex-wrap">
+            <div class="max-w-[1296px] mx-auto flex ">
+                <div class="lg:w-[591px]  w-full lg:text-left text-center flex flex-col ">
+                    <h2 class="text-xl font-extrabold lg:mt-32 mt-10">Welcome!</h2>
+                    <h2 class="lg:text-[64px] text-[45px] font-bold leading-[130%] mt-2l lg:h-[167px] lg:mb-8">Magang
+                        <span class="text-[#6366F1]">IT Hybrid</span> Bareng Aksamedia
+                    </h2>
+                    <h2 class="text-slate-500 text-lg lg:mt-6 mt-4 lg:w-[526px] w-[80%] mx-auto lg:mx-0">Enjoy our great
+                        selection of IT courses. Choose
+                        from more than
+                        25K online video courses and become an IT expert now!</h2>
+
+                    <div class="items-center flex mt-12 lg:mx-0 mx-auto  w-fit">
+                        <div class=" bg-white md:py-[14px] py-[12px] rounded-lg px-4 md:w-[458px]">
+                            <input type="text" placeholder="Search courses..."
+                                class="w-1/2 p-0 outline-none border-none">
+                            <select name="" id="" class="w-[48%] text-slate-400 outline-none p-0 border-none">
+                                <option value="">Categories</option>
+                                <option value="">Design</option>
+                                <option value="">Web Developer</option>
+                            </select>
+                        </div>
+                        <button class="md:p-[14px] p-[12px] bg-[#6366F1] rounded-md ml-4 mt-0 hover:opacity-80">
+                            <img src="/assets/icon/search.png" alt="" class="md:w-6 md:h-6 h-5 w-5">
+                        </button>
+                    </div>
+
+                    <div class="flex lg:mt-32 mt-20 items-center lg:mb-0 mb-12 mx-auto lg:mx-0">
+                        <img src="/assets/image/image5.png" alt="" class="w-12 h-12">
+                        <img src="/assets/image//image6.png" alt="" class="w-12h-12 h-12 -ml-4">
+                        <img src="assets/image/image7.png" alt="" class="w-12h-12 h-12 -ml-4">
+                        <h2 class="text-slate-500 ml-4"><span class="text-[#6366F1] font-bold">10K+</span> students are
+                            already with us</h2>
+                    </div>
+                </div>
+                <div class=" ml-auto lg:block mt-20 hidden h-[657px] w-[636px]">
+                    <img src="/assets/image/image1.png" alt=""
+                        class="w-[410px] h-[410px]  absolute ml-[110px] mt-[150px]">
+                    <img src="/assets/image/image2.png" alt="" class="w-[300px] h-[300px] ml-auto">
+                    <img src="/assets/image/image3.png" alt="" class="w-[250px] h-[250px] ml-auto mt-[75px] ">
+                    <img src="assets/image/image4.png" alt="" class="-mt-[570px] w-[180px] h-[180px ]">
+                    <div class="w-[200px] h-[200px] bg-gray-300 rounded-full ml-14 mt-20"></div>
+                    <div class="w-[120px] h-[120px] rounded-full bg-gray-300 -mt-[490px] ml-[310px]"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Bagian Header -->
+
+        <!-- Bagian How -->
+        <div class=" max-w-[1296px] mx-auto justify-center flex flex-wrap lg:mt-[84px] mt-12 flex-col px-4 lg:px-0">
+            <h2 class=" text-center lg:text-[40px] font-bold text-[25px] w-full">Bagaimana Kami Bisa Memulai?</h2>
+
+            <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                    <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
+                        <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
+                            <h2
+                                class="lg:text-[32px] font-bold leading-[160%] lg:h-[42px] lg:w-[42px] w-5 h-5 flex items-center justify-center ">
+                                1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center ">
+                    <img src="/assets/image/illustration1.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
+                w-[150px] h-[150px] lg:ml-[98px]">
+                    <div class="lg:ml-[134px] ml-[20px]">
+                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Pilih
+                            Skill yang sudah atau ingin anda
+                            kuasai</h2>
+                        <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Lorem ipsum
+                            dolor sit amet
+                            consectetur adipisicing elit.
+                            Quibusdam facilis et
+                            praesentium iusto quae nihil obcaecati aliquid pariatur sunt maiores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                    <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
+                        <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
+                            <h2
+                                class="lg:text-[32px] font-bold leading-[160%] lg:h-[42px] lg:w-[42px] w-5 h-5 flex items-center justify-center ">
+                                2</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center ">
+                    <img src="/assets/image/illustration2.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
+                w-[150px] h-[150px] lg:ml-[98px]">
+                    <div class="lg:ml-[134px] ml-[20px]">
+                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Ajukan
+                            permohonan magang Aksamedia</h2>
+                        <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Tristique sed
+                            pharetra feugiat
+                            tempor sagittis. Ultricies eu bibendum adipiscing lacinia. Quisque praesent aliquam tempus
+                            phasellus ut integer ac nunc dapibus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                    <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
+                        <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
+                            <h2
+                                class="lg:text-[32px] font-bold leading-[160%] lg:h-[42px] lg:w-[42px] w-5 h-5 flex items-center justify-center ">
+                                3</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center ">
+                    <img src="/assets/image/illustration3.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
+                w-[150px] h-[150px] lg:ml-[98px]">
+                    <div class="lg:ml-[134px] ml-[20px]">
+                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Akan ada
+                            interview singkat Aksamedia</h2>
+                        <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Duis euismod
+                            enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est. Magna
+                            ullamcorper potenti elementum ultricies auctor nec volutpat augue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                    <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
+                        <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
+                            <h2
+                                class="lg:text-[32px] font-bold leading-[160%] lg:h-[42px] lg:w-[42px] w-5 h-5 flex items-center justify-center ">
+                                4</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center ">
+                    <img src="/assets/image/illustration2.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
+                w-[150px] h-[150px] lg:ml-[98px]">
+                    <div class="lg:ml-[134px] ml-[20px]">
+                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Mulai
+                            belajar dan potensi kerja bareng Aksamedia</h2>
+                        <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Sed fermentum ut
+                            nibh duis. Dolor pretium arcu, tincidunt ultrices tristique arcu cursus massa gravida.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Akhir Bagian How -->
+
+        <!-- Bagian Apa yang -->
+        <div class="mt-[99px] max-w-[1296px] mx-auto px-3 lg:px-0">
+            <h2 class="text-center lg:text-[40px] font-bold text-[25px]">Apa yang Anda Dapatkan</h2>
+            <div class="flex-wrap flex justify-center mt-12 px-3 lg:px-0 gap-6">
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what1.svg" alt=""
+                            class="w-8 h-8"></div>
+                    <h2 class="text-xl font-bold mt-6 text-center lg:text-left">25K+ Online Video Courses</h2>
+                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sed deserunt ipsum vero tempore
+                        dolor quo commodi eius nam. Nulla, porro.</p>
+                </div>
+
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what2.svg" alt=""
+                            class="w-8 h-8"></div>
+                    <h2 class="text-xl font-bold mt-6 text-center lg:text-left">Mentor-Based Learning</h2>
+                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Sed optio repellat veniam ea dolor, alias, porro, adipisci harum ratione magni eaque?</p>
+                </div>
+
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what3.svg" alt=""
+                            class="w-8 h-8"></div>
+                    <h2 class="text-xl font-bold mt-6 text-center lg:text-left">Liftime Access</h2>
+                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Iusto natus aperiam at sapiente aspernatur,
+                        unde in vitae voluptatibus enim inventore?</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Bagian Apa yang -->
+
+        <!-- Bagian Review -->
+        <div class="max-w-[1296px] mx-auto mt-[122px] gap-6 flex">
+            <div class=" my-auto px-14 bg-gray-200 h-[441px] items-center flex">
+                <h2 class="text-[40px] font-bold leading-[130%] w-[414px] mx-auto">"kata mereka<br> Alumni Magang
+                    Aksamedia"</h2>
+            </div>
+
+            <div id="indicators-carousel" class="px-12 pt-12 box-shadow-magang" data-carousel="static">
+                <div class="flex">
+                    <img src="/assets/image/alumni.svg" alt="" class="p-[14px] bg-[#6366F1] rounded-lg ">
+                    <div class="ml-auto gap-4">
+                        <button class="p-2 shadow-xl rounded-full btnslide"><img src="assets/icon/dropdown.svg" alt=""
+                                class="w-5 h-5 rotate-90"></button>
+                        <button class="p-2 shadow-xl rounded-full btnslide"><img src="assets/icon/dropdown.svg" alt=""
+                                class="w-5 h-5 rotate-[270deg]"></button>
+                    </div>
+                </div>
+                <!-- Carousel Wrap -->
+                <div class="relative overflow-hidden">
+                    <!-- item 1 -->
+                    <div>
+                        <div>
+                            <p class="text-lg leading-[160%] text-slate-600 mt-8">Vestibulum nunc lectus auctor quis.
+                                Natoque
+                                lectus
+                                tortor lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi.
+                                Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel
+                                dignissim
+                                morbi
+                                blandit morbi
+                                tellus. Arcu ullamcorper quis enim.</p>
+
+                            <div class="mt-8 flex items-center">
+                                <img src="/assets/image/poto1.svg" alt="" class="rounded-full w-[60px] h-[60px]">
+
+                                <ul class="ml-4">
+                                    <li class="leading-[160%] font-bold text-slate-900">Annette Black</li>
+                                    <li class="text-sm font-light text-slate-500">QA Engineer in Company Name</li>
+                                </ul>
+                                <ul class="ml-auto flex gap-2">
+                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                src="assets/icon/fb.svg" alt="" class="w-[15px] h-[15px] "></button>
+                                    </li>
+                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                src="assets/icon/ig.svg" alt="" class="w-[15px] h-[15px] "></button>
+                                    </li>
+                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                src="assets/icon/x.svg" alt="" class="w-[15px] h-[15px]"></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Bagian Review -->
+
+        <!-- Bagian Trusted -->
+        <div class="max-w-[1296px] mx-auto mt-[121px]">
+            <h2 class="text-center text-[32px] font-bold text-slate-900">Dipercaya dan Kerjasama Kampus dan SMK</h2>
+            <div class="mt-8 flex gap-6 justify-center flex-wrap">
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo1.svg" alt="" class="max-w-[160px]">
+                </div>
+
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo2.svg" alt="" class="max-w-[160px]">
+                </div>
+
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo3.svg" alt="" class="max-w-[160px]">
+                </div>
+
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo4.svg" alt="" class="max-w-[160px]">
+                </div>
+
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo5.svg" alt="" class="max-w-[160px]">
+                </div>
+
+                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
+                    <img src="assets/image/logo6.svg" alt="" class="max-w-[160px]">
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Bagian Trusted -->
+
+        <!-- Bagian Ask -->
+        <div class="max-w-[1296px] mx-auto bg-[#6366F1] mt-24 rounded-lg">
+            <div class="relative"><img src="assets/image/shapes1.svg" alt="" class="absolute right-0 top-0"></div>
+            <div class="relative"><img src="assets/image/shapes2.svg" alt="" class="absolute left-0  top-[220px]"></div>
+            <!-- <div class="relative h-full"><img src="assets/image/shapes3.svg" alt="" class="absolute left-96 top-96"></div> -->
+            <div class="relative pt-20 px-[220px] pb-[112px]">
+                <h2 class="text-center text-[40px] font-bold text-white">Frequently Asked Question</h2>
+
+                <div class="mt-12 space-y-4 ">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">What if I don't
+                                have
+                                any professional
+                                background?</label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal ">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <p class="hidden asklist mt-4 text-sm text-slate-500 leading-[160%]">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo inventore unde impedit
+                                enim
+                                eveniet
+                                eaque atque, ducimus ab, nostrum consequatur quam culpa modi necessitatibus delectus.
+                                Saepe
+                                ipsum
+                                deserunt odio, dignissimos similique labore in quod delectus velit neque? Adipisci, at
+                                eum!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">
+                                How is this different from other courses on the market?</label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal ">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <p class="hidden asklist mt-4 text-sm text-slate-500 leading-[160%]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad, velit
+                                omnis repellendus esse reiciendis itaque aspernatur voluptates. At veniam expedita iusto
+                                voluptatibus atque cum suscipit accusantium eligendi eveniet tempora vero eos nam
+                                deleniti
+                                quos est modi voluptatum libero ipsam voluptates, aperiam optio nemo sit?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">How much time does
+                                it
+                                take to do my homework
+                                per week? What if I don't like it?
+                            </label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <div class="hidden asklist">
+                                <p class=" mt-4 text-sm text-slate-500 leading-[160%]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a ab ipsam
+                                    dolorem accusamus esse consequuntur labore numquam blanditiis itaque!
+
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut iure possimus est
+                                    soluta
+                                    quos
+                                    officia, suscipit aperiam incidunt dolorem sapiente?
+                                </p>
+
+                                <p class=" mt-4 text-sm text-slate-500 leading-[160%]">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ex,
+                                    reprehenderit
+                                    provident debitis soluta perspiciatis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">Is there any kind
+                                of certificate of completion?</label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <p class="hidden asklist mt-4 text-sm text-slate-500 leading-[160%]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero sed amet voluptas quo
+                                accusantium, maxime, beatae voluptates dicta impedit iste ab laboriosam officiis
+                                doloribus minima ducimus sit animi nostrum. Unde rem deserunt blanditiis mollitia
+                                eligendi laborum veritatis, architecto doloremque expedita ea velit neque error enim
+                                repellat natus! Ipsum, iste.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">YouTube is full of
+                                free tutorials, videos and courses. Why should I take any course here?</label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <p class="hidden asklist mt-4 text-sm text-slate-500 leading-[160%]">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut sequi ab porro deleniti,
+                                assumenda at modi neque aliquid pariatur velit aliquam id nobis fugit expedita molestiae
+                                excepturi? Sed deserunt, sunt debitis neque dolorem quibusdam nostrum. Atque quaerat
+                                nisi, consectetur molestias cum deleniti vel illo dolorum soluta magni ad omnis. Omnis
+                                natus corrupti recusandae commodi tenetur provident cum ipsa earum et.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                        <div class="ask w-full cursor-pointer flex items-center flex-wrap">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">What happen if I
+                                forget or lose my password?</label>
+                            <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
+                                <img src="assets/icon/dropdown.svg" alt="" class="button-normal ">
+                                <img src="assets/icon/buttonwht.svg" alt="" class="button-white hidden">
+                            </div>
+                            <p class="hidden asklist mt-4 text-sm text-slate-500 leading-[160%]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit autem velit
+                                explicabo illo suscipit ducimus libero blanditiis, laboriosam harum, nemo, nihil error
+                                sunt in numquam sit eaque similique nisi id nesciunt quibusdam quo dolorum. Blanditiis
+                                repellendus enim perspiciatis molestias in quibusdam nobis aliquam eveniet!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Bagian Ask -->
+
+        <!-- Bagian Gabung -->
+        <div class="bg-gray-100 mt-[82px]">
+            <div class="max-w-[1296px] mx-auto pt-[86px] pb-[112px]">
+                <h2 class="text-[40px] font-bold text-center leading-[130%] w-[748px] mx-auto">Siap bergabung magang
+                    Aksamedia? Ayo mulai dari sekarang</h2>
+                <div class="mt-[59px] flex gap-6">
+                    <img src="assets/image/imagegabung.svg" alt="" class="w-[746px] h-[618px] rounded-lg">
+                    <div class="bg-white w-full px-12 pt-12 rounded-lg">
+                        <h2 class="text-[28px] font-bold">Kuota Terbatas <span class="text-[#EF4444]">20 orang</span> di
+                            setiap angkatan!</h2>
+                        <div class="mt-10">
+                            <label for="name" class="font-semibold leading-[160%]">Nama Lengkap</label>
+                            <input type="text" name="name" id="name"
+                                class="outline-none border-[1px] border-gray-300 w-full rounded-lg h-[52px] px-2 mt-1">
+                        </div>
+                        <div class="mt-6">
+                            <label for="noHp" class="font-semibold leading-[160%]">Nomer HP Aktif</label>
+                            <input type="text" name="noHp" id="noHp"
+                                class="outline-none border-[1px] border-gray-300 w-full rounded-lg h-[52px] px-2 mt-1">
+                        </div>
+
+                        <button
+                            class="px-8 py-[13px] bg-[#6366F1] text-white font-semibold mt-8 rounded-lg shadow-lg hover:opacity-90">Kirim
+                            Permohonan Magang</button>
+                        <h2 class="mt-12 font-bold leading-[160%]">Or sign up using:</h2>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
+                                    src="assets/icon/logo_google.svg" alt="" class="w-5 h-5"></button>
+                            <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
+                                    src="assets/icon/logo_fb.svg" alt="" class="w-5 h-5"></button>
+                            <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
+                                    src="assets/icon/logo_linkedin.svg" alt="" class="w-5 h-5"></button>
+                            <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
+                                    src="assets/icon/logo_github.svg" alt="" class="w-5 h-5"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Bagian Gabung -->
+
+        <!-- Bagian Footer -->
+        <div class="max-w-[1296px] mx-auto pt-[110px] flex flex-wrap pb-16">
+            <div class="w-[33%]">
+                <div class="flex items-center gap-[7.5px]">
+                    <img src="assets/image/Group 2.svg" alt="" class="max-w-[47px] max-h-[47px]">
+                    <h2 class="font-bold text-[20px]">Silicon</h2>
+                </div>
+                <p class="mt-6 text-sm leading-[160%] text-slate-500">
+                    Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae
+                    nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum
+                    dolor ullamcorper sodales ultrices eros.
+                </p>
+                <h2 class="mt-10 text-sm font-bold leading-[160%]">Subscribe to our newsletter</h2>
+                <form action="" class="flex items-center mt-2 w-full">
+                    <div
+                        class="flex items-center pl-4 py-[11px] border-[1px] border-gray-300 w-[70%] rounded-l-md gap-2">
+                        <img src="assets/icon/iconmail.svg" alt="" class="w-5 h-5 ">
+                        <input type="text" placeholder="Your Email" class="outline-none p-0 text-sm border-none">
+                    </div>
+                    <button class="bg-[#6366F1] w-[30%] py-[11px] -ml-1
+                         rounded-r-md text-sm font-semibold leading-[160%] text-white">Subscribe</button>
+                </form>
+            </div>
+            <div class="w-[40%] ml-[220px]">
+                <div class="grid grid-cols-3">
+                    <div class="flex flex-col space-y-2">
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Home</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">About</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Courses</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Careers</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Blog</a>
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Facebook</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Linkedin</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Twitter</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Instagram</a>
+                    </div>
+
+                    <div>
+                        <h2 class="text-sm font-semibold">Contact Us</h2>
+                        <a href="" class="text-blue-700 underline">example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex flex-col mt-10 space-y-2">
+                    <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Terms & Conditions</a>
+                    <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Privacy Policy</a>
+                </div>
+            </div>
+            <h2 class="mt-[72px] text-xs leading-[160%] text-slate-400">2021. All rihgts reserved. Silicon Template</h2>
+        </div>
+        <!-- Akhir Bagian Footer -->
+    </div>
+
+    <script>
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownList = document.getElementById('dropdownList')
+
+        dropdownButton.addEventListener('click', () => {
+            if (dropdownList.classList.contains('hidden')) {
+                dropdownList.classList.remove('hidden')
+            } else {
+                dropdownList.classList.add('hidden')
+            }
+        })
+
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownList.contains(event.target)) {
+                dropdownList.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+    <script>
+        // ask = select
+        // asklist = menu
+
+        const dropdown = document.querySelectorAll('.dropdown')
+
+        dropdown.forEach(dropdown => {
+            const select = dropdown.querySelector('.ask')
+            const menu = dropdown.querySelector('.asklist')
+            const button = dropdown.querySelector('.button')
+            const buttonNormal = dropdown.querySelector('.button-normal')
+            const buttonWhite = dropdown.querySelector('.button-white')
+
+            select.addEventListener('click', () => {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden')
+                    button.classList.add('bg-[#6366F1]')
+                    button.classList.remove('bg-gray-100')
+                    buttonWhite.classList.remove('hidden')
+                    buttonNormal.classList.add('hidden')
+
+
+                } else {
+                    menu.classList.add('hidden')
+                    button.classList.remove('bg-[#6366F1]')
+                    button.classList.add('bg-gray-100')
+                    buttonWhite.classList.add('hidden')
+                    buttonNormal.classList.remove('hidden')
+                }
+            })
+
+        })
+    </script>
+
+
+</body>
+
+</html>
