@@ -7,6 +7,7 @@
     <title>Slicing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .box-shadow-magang {
             box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
@@ -16,7 +17,7 @@
             box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
         }
 
-        html {
+           html {
             scroll-behavior: smooth;
         }
     </style>
@@ -24,9 +25,9 @@
 </head>
 
 <body>
-    <div class="max-w-[1920px] ">
+    <div class="max-w-[1920px] overflow-hidden">
         <!-- Bagian Navbar -->
-        <div class="flex items-center gap-2 lg:py-2  max-w-[1296px] h-[76px] mx-auto px-4 lg:px-0">
+        <div class="flex items-center gap-2 lg:py-2  max-w-[1296px] h-[76px] mx-auto px-5 lg:px-0">
             <img src="/assets/image/Group 2.svg" alt="" class="w-[47px] h-[44px]">
             <h1 class="font-bold text-[20px]">Silicon</h1>
             <ul class="lg:flex items-center gap-6 ml-8 hidden">
@@ -91,19 +92,24 @@
         <!-- Akhir Bagian Navbar -->
 
         <!-- Bagian Header -->
-        <div class="lg:h-[801px] bg-gray-200 px-4 lg:px-0 flex flex-wrap">
+        <div class="lg:h-[801px] bg-gray-200 px-5 lg:px-0 flex flex-wrap">
             <div class="max-w-[1296px] mx-auto flex ">
                 <div class="lg:w-[591px]  w-full lg:text-left text-center flex flex-col ">
-                    <h2 class="text-xl font-extrabold lg:mt-32 mt-10">Welcome!</h2>
-                    <h2 class="lg:text-[64px] text-[45px] font-bold leading-[130%] mt-2l lg:h-[167px] lg:mb-8">Magang
-                        <span class="text-[#6366F1]">IT Hybrid</span> Bareng Aksamedia
+                    <h2 class="text-xl font-extrabold lg:mt-32 mt-10" data-aos="fade-right" data-aos-duration="700">
+                        Welcome!</h2>
+                    <h2
+                        class="magang lg:text-[64px] text-[45px] font-bold leading-[130%] mt-2l lg:h-[167px] lg:mb-8 h-[120px]">
+                        Magang
+                        <span class="text-[#6366F1] magangspan">IT Hybrid</span> Bareng Aksamedia
                     </h2>
-                    <h2 class="text-slate-500 text-lg lg:mt-6 mt-4 lg:w-[526px] w-[80%] mx-auto lg:mx-0">Enjoy our great
+                    <h2 class="text-slate-500 text-lg lg:mt-6 mt-4 lg:w-[526px] w-[80%] mx-auto lg:mx-0"
+                        data-aos="fade-right" data-aos-duration="700" data-aos-delay="300">Enjoy our great
                         selection of IT courses. Choose
                         from more than
                         25K online video courses and become an IT expert now!</h2>
 
-                    <div class="items-center flex mt-12 lg:mx-0 mx-auto  w-fit">
+                    <div class="items-center flex mt-12 lg:mx-0 mx-auto  w-fit" data-aos="fade-right"
+                        data-aos-duration="700" data-aos-delay="600">
                         <div class=" bg-white md:py-[14px] py-[12px] rounded-lg px-4 md:w-[458px]">
                             <input type="text" placeholder="Search courses..."
                                 class="w-1/2 p-0 outline-none border-none">
@@ -118,7 +124,8 @@
                         </button>
                     </div>
 
-                    <div class="flex lg:mt-32 mt-20 items-center lg:mb-0 mb-12 mx-auto lg:mx-0">
+                    <div class="flex lg:mt-32 mt-20 items-center lg:mb-0 mb-12 mx-auto lg:mx-0" data-aos="fade-up"
+                        data-aos-duration="700" data-aos-offset="-200">
                         <img src="/assets/image/image5.png" alt="" class="w-12 h-12">
                         <img src="/assets/image//image6.png" alt="" class="w-12h-12 h-12 -ml-4">
                         <img src="assets/image/image7.png" alt="" class="w-12h-12 h-12 -ml-4">
@@ -128,10 +135,14 @@
                 </div>
                 <div class=" ml-auto lg:block mt-20 hidden h-[657px] w-[636px]">
                     <img src="/assets/image/image1.png" alt=""
-                        class="w-[410px] h-[410px]  absolute ml-[110px] mt-[150px]">
-                    <img src="/assets/image/image2.png" alt="" class="w-[300px] h-[300px] ml-auto">
-                    <img src="/assets/image/image3.png" alt="" class="w-[250px] h-[250px] ml-auto mt-[75px] ">
-                    <img src="assets/image/image4.png" alt="" class="-mt-[570px] w-[180px] h-[180px ]">
+                        class="w-[410px] h-[410px] absolute ml-[110px] mt-[150px] z-10" data-aos="zoom-in"
+                        data-aos-delay="500">
+                    <img src="/assets/image/image2.png" alt="" class="w-[300px] h-[300px] ml-auto" data-aos="zoom-in"
+                        data-aos-delay="150">
+                    <img src="/assets/image/image3.png" alt="" class="w-[250px] h-[250px] ml-auto mt-[75px] "
+                        data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/image/image4.png" alt="" class="-mt-[570px] w-[180px] h-[180px ]"
+                        data-aos="zoom-in">
                     <div class="w-[200px] h-[200px] bg-gray-300 rounded-full ml-14 mt-20"></div>
                     <div class="w-[120px] h-[120px] rounded-full bg-gray-300 -mt-[490px] ml-[310px]"></div>
                 </div>
@@ -141,11 +152,13 @@
         <!-- Akhir Bagian Header -->
 
         <!-- Bagian How -->
-        <div class=" max-w-[1296px] mx-auto justify-center flex flex-wrap lg:mt-[84px] mt-12 flex-col px-4 lg:px-0">
-            <h2 class=" text-center lg:text-[40px] font-bold text-[25px] w-full">Bagaimana Kami Bisa Memulai?</h2>
+        <div class=" max-w-[1296px] mx-auto justify-center flex flex-wrap lg:mt-[84px] mt-12 flex-col px-5 lg:px-0 ">
+            <h2 class=" text-center lg:text-[40px] font-bold text-[30px] w-full" data-aos="fade-down"
+                data-aos-duration="700">Bagaimana Kami Bisa Memulai?</h2>
 
             <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
-                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10" data-aos="flip-up"
+                    data-aos-duration="700">
                     <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
                         <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
                             <h2
@@ -156,9 +169,9 @@
                 </div>
                 <div class="flex items-center ">
                     <img src="/assets/image/illustration1.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
-                w-[150px] h-[150px] lg:ml-[98px]">
-                    <div class="lg:ml-[134px] ml-[20px]">
-                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Pilih
+                w-[150px] h-[150px] lg:ml-[98px]" data-aos="fade-right" data-aos-duration="700">
+                    <div class="lg:ml-[134px] ml-[20px]" data-aos="fade-left" data-aos-duration="700">
+                        <h2 class="lg:text-2xl text-lg mb-4 font-bold leading-[110%] lg:leading-[140%]">Pilih
                             Skill yang sudah atau ingin anda
                             kuasai</h2>
                         <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Lorem ipsum
@@ -171,7 +184,8 @@
             </div>
 
             <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
-                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10" data-aos="flip-up"
+                    data-aos-duration="700">
                     <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
                         <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
                             <h2
@@ -182,9 +196,9 @@
                 </div>
                 <div class="flex items-center ">
                     <img src="/assets/image/illustration2.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
-                w-[150px] h-[150px] lg:ml-[98px]">
-                    <div class="lg:ml-[134px] ml-[20px]">
-                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Ajukan
+                w-[150px] h-[150px] lg:ml-[98px]" data-aos="fade-right" data-aos-duration="700">
+                    <div class="lg:ml-[134px] ml-[20px]" data-aos="fade-left" data-aos-duration="700">
+                        <h2 class="lg:text-2xl text-lg mb-4  font-bold leading-[110%] lg:leading-[140%]">Ajukan
                             permohonan magang Aksamedia</h2>
                         <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Tristique sed
                             pharetra feugiat
@@ -195,7 +209,8 @@
             </div>
 
             <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
-                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10" data-aos="flip-up"
+                    data-aos-duration="700">
                     <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
                         <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
                             <h2
@@ -206,9 +221,9 @@
                 </div>
                 <div class="flex items-center ">
                     <img src="/assets/image/illustration3.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
-                w-[150px] h-[150px] lg:ml-[98px]">
-                    <div class="lg:ml-[134px] ml-[20px]">
-                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Akan ada
+                w-[150px] h-[150px] lg:ml-[98px]" data-aos="fade-right" data-aos-duration="700">
+                    <div class="lg:ml-[134px] ml-[20px]" data-aos="fade-left" data-aos-duration="700">
+                        <h2 class="lg:text-2xl text-lg mb-4 font-bold leading-[110%] lg:leading-[140%]">Akan ada
                             interview singkat Aksamedia</h2>
                         <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Duis euismod
                             enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est. Magna
@@ -218,7 +233,8 @@
             </div>
 
             <div class="flex lg:mt-16 mt-6 items-center md:flex-nowrap flex-wrap max-w-[800px] mx-auto lg:max-w-none">
-                <div class="flex relative justify-center w-full md:w-fit md:mr-10">
+                <div class="flex relative justify-center w-full md:w-fit md:mr-10" data-aos="flip-up"
+                    data-aos-duration="700">
                     <div class="p-2 lg:p-4 md:p-2 rounded-full bg-gray-100 mb-2">
                         <div class="p-1.5 lg:p-6 md:p-3 rounded-full bg-white shadow-lg">
                             <h2
@@ -229,9 +245,9 @@
                 </div>
                 <div class="flex items-center ">
                     <img src="/assets/image/illustration2.svg" alt="" class=" lg:w-[306px] lg:h-[300px] 
-                w-[150px] h-[150px] lg:ml-[98px]">
-                    <div class="lg:ml-[134px] ml-[20px]">
-                        <h2 class="lg:text-2xl text-lg lg:mb-4 mb-2 font-bold leading-[110%] lg:leading-[140%]">Mulai
+                w-[150px] h-[150px] lg:ml-[98px]" data-aos="fade-right" data-aos-duration="700">
+                    <div class="lg:ml-[134px] ml-[20px]" data-aos="fade-left" data-aos-duration="700">
+                        <h2 class="lg:text-2xl text-lg lg:mb-4 font-bold leading-[110%] lg:leading-[140%]">Mulai
                             belajar dan potensi kerja bareng Aksamedia</h2>
                         <p class="text-slate-600 lg:leading-[160%] lg:text-base text-sm leading-[120%]">Sed fermentum ut
                             nibh duis. Dolor pretium arcu, tincidunt ultrices tristique arcu cursus massa gravida.</p>
@@ -244,32 +260,42 @@
         <!-- Akhir Bagian How -->
 
         <!-- Bagian Apa yang -->
-        <div class="mt-[99px] max-w-[1296px] mx-auto px-3 lg:px-0">
-            <h2 class="text-center lg:text-[40px] font-bold text-[25px]">Apa yang Anda Dapatkan</h2>
-            <div class="flex-wrap flex justify-center mt-12 px-3 lg:px-0 gap-6">
-                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
-                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what1.svg" alt=""
-                            class="w-8 h-8"></div>
+        <div class="mt-[99px] max-w-[1296px] mx-auto px-5 lg:px-0">
+            <h2 class="text-center lg:text-[40px] font-bold text-[30px]" data-aos="fade-down" data-aos-duration="700">
+                Apa yang Anda Dapatkan</h2>
+            <div class="flex-wrap flex justify-center mt-12 md:px-3 lg:px-0 gap-6">
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]" data-aos="fade-up"
+                    data-aos-duration="700" data-aos-delay="150">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what1.svg"
+                            alt="" class="w-8 h-8"></div>
                     <h2 class="text-xl font-bold mt-6 text-center lg:text-left">25K+ Online Video Courses</h2>
-                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    <p
+                        class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Sed deserunt ipsum vero tempore
                         dolor quo commodi eius nam. Nulla, porro.</p>
                 </div>
 
-                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
-                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what2.svg" alt=""
-                            class="w-8 h-8"></div>
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]" data-aos="fade-up"
+                    data-aos-duration="700" data-aos-delay="300">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what2.svg"
+                            alt="" class="w-8 h-8"></div>
                     <h2 class="text-xl font-bold mt-6 text-center lg:text-left">Mentor-Based Learning</h2>
-                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p
+                        class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.
                         Sed optio repellat veniam ea dolor, alias, porro, adipisci harum ratione magni eaque?</p>
                 </div>
 
-                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]">
-                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what3.svg" alt=""
-                            class="w-8 h-8"></div>
+                <div class="p-6 border-2 rounded-lg w-full sm:w-[48%] lg:w-[32%]" data-aos="fade-up"
+                    data-aos-duration="700" data-aos-delay="450">
+                    <div class="p-4 bg-gray-200 w-fit rounded-full mx-auto lg:mx-0"><img src="/assets/image/what3.svg"
+                            alt="" class="w-8 h-8"></div>
                     <h2 class="text-xl font-bold mt-6 text-center lg:text-left">Liftime Access</h2>
-                    <p class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p
+                        class="text-slate-600 mt-3 leading-[160%] text-center lg:text-left max-w-[300px] mx-auto lg:mx-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Iusto natus aperiam at sapiente aspernatur,
                         unde in vitae voluptatibus enim inventore?</p>
                 </div>
@@ -279,88 +305,239 @@
         <!-- Akhir Bagian Apa yang -->
 
         <!-- Bagian Review -->
-        <div class="max-w-[1296px] mx-auto mt-[122px] gap-6 flex">
-            <div class=" my-auto px-14 bg-gray-200 h-[441px] items-center flex">
-                <h2 class="text-[40px] font-bold leading-[130%] w-[414px] mx-auto">"kata mereka<br> Alumni Magang
-                    Aksamedia"</h2>
+        <div class="max-w-[1296px] mx-auto mt-[122px] gap-6 flex md:flex-nowrap flex-wrap justify-center px-5 lg:px-0">
+            <div class="relative" data-aos="fade-right" data-aos-duration="700">
+                <div class=" my-auto lg:px-14 sm:w-full bg-gray-200 md:h-[441px] items-center flex">
+                    <h2
+                        class="md:text-[40px] text-[30px] font-bold leading-[130%] md:w-[414px] px-5 lg:px-0 w-full md:text-left py-5 md:py-0 mx-auto">
+                        "kata mereka<br class="hidden md:block"> Alumni Magang
+                        Aksamedia"</h2>
+                </div>
             </div>
 
-            <div id="indicators-carousel" class="px-12 pt-12 box-shadow-magang" data-carousel="static">
+            <div id="default-carousel" class=" relative px-12 pt-12 box-shadow-magang w-full" data-carousel="static"
+                data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
                 <div class="flex">
                     <img src="/assets/image/alumni.svg" alt="" class="p-[14px] bg-[#6366F1] rounded-lg ">
-                    <div class="ml-auto gap-4">
-                        <button class="p-2 shadow-xl rounded-full btnslide"><img src="assets/icon/dropdown.svg" alt=""
-                                class="w-5 h-5 rotate-90"></button>
-                        <button class="p-2 shadow-xl rounded-full btnslide"><img src="assets/icon/dropdown.svg" alt=""
-                                class="w-5 h-5 rotate-[270deg]"></button>
+                    <div class="ml-auto gap-4 ">
+                        <button type="button" data-carousel-prev class="p-2 shadow-xl rounded-full "><img
+                                src="assets/icon/dropdown.svg" alt="" class="w-5 h-5 rotate-90"></button>
+                        <button type="button" data-carousel-next class="p-2 shadow-xl rounded-full "><img
+                                src="assets/icon/dropdown.svg" alt="" class="w-5 h-5 rotate-[270deg]"></button>
                     </div>
                 </div>
-                <!-- Carousel Wrap -->
-                <div class="relative overflow-hidden">
-                    <!-- item 1 -->
-                    <div>
+                <!-- Carousel wrapper -->
+                <div class="relative overflow-hidden rounded-lg h-72">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <div>
-                            <p class="text-lg leading-[160%] text-slate-600 mt-8">Vestibulum nunc lectus auctor quis.
-                                Natoque
-                                lectus
-                                tortor lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi.
-                                Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel
-                                dignissim
-                                morbi
-                                blandit morbi
-                                tellus. Arcu ullamcorper quis enim.</p>
+                            <div>
+                                <p class="text-lg leading-[160%] text-slate-600 mt-8  h-[116px] overflow-hidden">
+                                    Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perferendis molestiae
+                                    repellat commodi, dolor numquam error nisi inventore rem obcaecati ipsum accusantium
+                                    esse quod explicabo modi nihil deleniti similique? Culpa, rem tempora modi fugiat
+                                    doloribus officia eveniet necessitatibus nulla doloremque architecto distinctio quos
+                                    facere labore beatae quisquam nam est molestias repellendus dicta! Asperiores earum
+                                    consequatur at atque cupiditate fugit accusantium.
+                                <div class="mt-8 flex items-center">
+                                    <img src="/assets/image/poto1.svg" alt=""
+                                        class="rounded-full lg:w-[60px] lg:h-[60px] w-10 h-10">
 
-                            <div class="mt-8 flex items-center">
-                                <img src="/assets/image/poto1.svg" alt="" class="rounded-full w-[60px] h-[60px]">
-
-                                <ul class="ml-4">
-                                    <li class="leading-[160%] font-bold text-slate-900">Annette Black</li>
-                                    <li class="text-sm font-light text-slate-500">QA Engineer in Company Name</li>
-                                </ul>
-                                <ul class="ml-auto flex gap-2">
-                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
-                                                src="assets/icon/fb.svg" alt="" class="w-[15px] h-[15px] "></button>
-                                    </li>
-                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
-                                                src="assets/icon/ig.svg" alt="" class="w-[15px] h-[15px] "></button>
-                                    </li>
-                                    <li><button class="p-[9px] bg-[#EFF2FC] rounded hover:bg-gray-200"><img
-                                                src="assets/icon/x.svg" alt="" class="w-[15px] h-[15px]"></button></li>
-                                </ul>
+                                    <ul class="ml-4">
+                                        <li class="leading-[160%] font-bold text-slate-900 text-sm lg:text-base">Annette
+                                            Black</li>
+                                        <li class="lg:text-sm font-light text-slate-500 text-xs">QA Engineer in Company
+                                            Name
+                                        </li>
+                                    </ul>
+                                    <ul class="ml-auto flex gap-2">
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/fb.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/ig.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/x.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+                            <div>
+                                <p class="text-lg leading-[160%] text-slate-600 mt-8 h-[116px] overflow-hidden">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sequi
+                                    asperiores nesciunt commodi itaque voluptatem, necessitatibus quae consequatur sit
+                                    ut porro facere repellendus, dolor exercitationem odio cumque. Cum at debitis
+                                    accusamus architecto sapiente obcaecati dolorem deleniti amet error perferendis
+                                    repudiandae ab eligendi beatae quod esse sunt quidem, corporis voluptas, dolores
+                                    quibusdam, hic cupiditate mollitia? Ipsam corporis cumque nesciunt doloribus,
+                                    consectetur similique inventore quam doloremque repellendus sed facere quod labore
+                                    iste nulla neque. Repudiandae perferendis quo ullam et? Dignissimos eos alias quia
+                                    reprehenderit esse tempora nam id? A, iste. Praesentium eius voluptates nisi
+                                    explicabo corrupti modi provident inventore delectus esse non?.</p>
+
+                                <div class="mt-8 flex items-center">
+                                    <img src="/assets/image/PPCR7.jpeg" alt=""
+                                        class="rounded-full lg:w-[60px] lg:h-[60px] w-10 h-10">
+
+                                    <ul class="ml-4">
+                                        <li class="leading-[160%] font-bold text-slate-900 text-sm lg:text-base">
+                                            Cristiano Ronaldo</li>
+                                        <li class="lg:text-sm font-light text-slate-500 text-xs">CEO of CR7
+                                        </li>
+                                    </ul>
+                                    <ul class="ml-auto flex gap-2">
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/fb.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/ig.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/x.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+                            <div>
+                                <p class="text-lg leading-[160%] text-slate-600 mt-8 h-[116px] overflow-hidden">Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempora voluptatem nam
+                                    doloribus neque, hic laudantium cum, iure, consequuntur quisquam temporibus non.
+                                    Laborum rem facere mollitia dolore, doloribus ratione! Ipsa aut earum dolorem dicta
+                                    id.</p>
+
+                                <div class="mt-8 flex items-center">
+                                    <img src="/assets/image/PPJAMES.jpeg" alt=""
+                                        class="rounded-full lg:w-[60px] lg:h-[60px] w-10 h-10">
+
+                                    <ul class="ml-4">
+                                        <li class="leading-[160%] font-bold text-slate-900 text-sm lg:text-base">Lebron
+                                            Jamse</li>
+                                        <li class="lg:text-sm font-light text-slate-500 text-xs">NBA Players
+                                        </li>
+                                    </ul>
+                                    <ul class="ml-auto flex gap-2">
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/fb.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/ig.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/x.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div>
+                            <div>
+                                <p class="text-lg leading-[160%] text-slate-600 mt-8">Lorem ipsum dolor, sit amet
+                                    consectetur adipisicing elit. Impedit, nisi laudantium? Accusantium illum,
+                                    consequuntur temporibus dignissimos nemo soluta ullam totam eum error voluptatem ad,
+                                    dolorum omnis suscipit pariatur maiores. Qui possimus ipsa eveniet rerum quidem..
+                                </p>
+
+                                <div class="mt-8 flex items-center">
+                                    <img src="/assets/image/PPKHABIB.jpeg" alt=""
+                                        class="rounded-full lg:w-[60px] lg:h-[60px] w-10 h-10">
+
+                                    <ul class="ml-4">
+                                        <li class="leading-[160%] font-bold text-slate-900 text-sm lg:text-base">Khabib
+                                            Nurmagomedov</li>
+                                        <li class="lg:text-sm font-light text-slate-500 text-xs">UFC Champions</li>
+                                    </ul>
+                                    <ul class="ml-auto flex gap-2">
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/fb.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/ig.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button>
+                                        </li>
+                                        <li><button
+                                                class="lg:p-[9px] p-[9px] md:p-0 bg-[#EFF2FC] rounded hover:bg-gray-200"><img
+                                                    src="assets/icon/x.svg" alt=""
+                                                    class="lg:w-[15px] lg:h-[15px] w-5 h-5"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <!-- Akhir Bagian Review -->
 
         <!-- Bagian Trusted -->
-        <div class="max-w-[1296px] mx-auto mt-[121px]">
-            <h2 class="text-center text-[32px] font-bold text-slate-900">Dipercaya dan Kerjasama Kampus dan SMK</h2>
+        <div class="max-w-[1296px] mx-auto mt-[121px] px-5 lg:px-0">
+            <h2 class="text-center lg:text-[32px] text-[28px] font-bold text-slate-900" data-aos="zoom-in"
+                data-aos-duration="700" data-aos-offset="100">Dipercaya dan Kerjasama Kampus
+                dan SMK</h2>
             <div class="mt-8 flex gap-6 justify-center flex-wrap">
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo1.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700">
+                    <img src="assets/image/logo1.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
 
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo2.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="150">
+                    <img src="assets/image/logo2.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
 
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo3.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+                    <img src="assets/image/logo3.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
 
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo4.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="450">
+                    <img src="assets/image/logo4.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
 
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo5.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600">
+                    <img src="assets/image/logo5.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
 
-                <div class="border-[1px] w-[196px] h-[100px] justify-center rounded-lg flex border-gray-300">
-                    <img src="assets/image/logo6.svg" alt="" class="max-w-[160px]">
+                <div class="border-[1px] lg:w-[196px] lg:h-[100px] w-[166px] h-[80px] justify-center rounded-lg flex border-gray-300"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="750">
+                    <img src="assets/image/logo6.svg" alt="" class="lg:max-w-[160px] max-w-[130px]">
                 </div>
             </div>
         </div>
@@ -371,13 +548,16 @@
             <div class="relative"><img src="assets/image/shapes1.svg" alt="" class="absolute right-0 top-0"></div>
             <div class="relative"><img src="assets/image/shapes2.svg" alt="" class="absolute left-0  top-[220px]"></div>
             <!-- <div class="relative h-full"><img src="assets/image/shapes3.svg" alt="" class="absolute left-96 top-96"></div> -->
-            <div class="relative pt-20 px-[220px] pb-[112px]">
-                <h2 class="text-center text-[40px] font-bold text-white">Frequently Asked Question</h2>
+            <div class="relative md:pt-20 pt-10 lg:px-[220px] md:px-28 px-5 pb-[112px]">
+                <h2 class="text-center lg:text-[40px] text-[30px] font-bold text-white" data-aos="zoom-in"
+                    data-aos-duration="700" data-aos-offset="100">Frequently Asked Question</h2>
 
                 <div class="mt-12 space-y-4 ">
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown flex items-center rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="150">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">What if I don't
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">What if I
+                                don't
                                 have
                                 any professional
                                 background?</label>
@@ -398,9 +578,10 @@
                         </div>
                     </div>
 
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="300" data-aos-offset="-100">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">
                                 How is this different from other courses on the market?</label>
                             <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
                                 <img src="assets/icon/dropdown.svg" alt="" class="button-normal ">
@@ -416,9 +597,11 @@
                         </div>
                     </div>
 
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="450" data-aos-offset="-200">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">How much time does
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">How much
+                                time does
                                 it
                                 take to do my homework
                                 per week? What if I don't like it?
@@ -447,9 +630,11 @@
                         </div>
                     </div>
 
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="600" data-aos-offset="-300">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">Is there any kind
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">Is there
+                                any kind
                                 of certificate of completion?</label>
                             <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
                                 <img src="assets/icon/dropdown.svg" alt="" class="button-normal">
@@ -465,9 +650,11 @@
                         </div>
                     </div>
 
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="750" data-aos-offset="-400">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">YouTube is full of
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">YouTube is
+                                full of
                                 free tutorials, videos and courses. Why should I take any course here?</label>
                             <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
                                 <img src="assets/icon/dropdown.svg" alt="" class="button-normal">
@@ -483,9 +670,11 @@
                         </div>
                     </div>
 
-                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200">
+                    <div class=" bg-white cursor-pointer px-6 py-4 dropdown rounded-lg hover:bg-gray-200"
+                        data-aos="flip-down" data-aos-duration="400" data-aos-delay="900" data-aos-offset="-500">
                         <div class="ask w-full cursor-pointer flex items-center flex-wrap">
-                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer">What happen if I
+                            <label class="font-semibold text-slate-900 leading-[160%] cursor-pointer w-[80%]">What
+                                happen if I
                                 forget or lose my password?</label>
                             <div class="ml-auto items-center flex p-2 button bg-gray-100 rounded-full">
                                 <img src="assets/icon/dropdown.svg" alt="" class="button-normal ">
@@ -506,13 +695,15 @@
         <!-- Akhir Bagian Ask -->
 
         <!-- Bagian Gabung -->
-        <div class="bg-gray-100 mt-[82px]">
-            <div class="max-w-[1296px] mx-auto pt-[86px] pb-[112px]">
-                <h2 class="text-[40px] font-bold text-center leading-[130%] w-[748px] mx-auto">Siap bergabung magang
+        <div class="bg-gray-100 mt-[82px] px-5 lg:px-0">
+            <div class="max-w-[1296px] mx-auto md:pt-[86px] md:pb-[112px] pt-[46px] pb-[60px]">
+                <h2 class="lg:text-[40px] text-[28px]  font-bold text-center leading-[130%] md:w-[748px] mx-auto"
+                    data-aos="zoom-in" data-aos-duration="700">Siap
+                    bergabung magang
                     Aksamedia? Ayo mulai dari sekarang</h2>
-                <div class="mt-[59px] flex gap-6">
-                    <img src="assets/image/imagegabung.svg" alt="" class="w-[746px] h-[618px] rounded-lg">
-                    <div class="bg-white w-full px-12 pt-12 rounded-lg">
+                <div class="md:mt-[59px] mt-12 flex flex-wrap lg:flex-nowrap justify-center gap-6">
+                    <img src="assets/image/imagegabung.svg" alt="" class="lg:w-[746px] lg:max-h-[618px]  rounded-lg" data-aos="fade-right" data-aos-duration="700">
+                    <div class="bg-white w-full px-12 pt-12 rounded-lg" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
                         <h2 class="text-[28px] font-bold">Kuota Terbatas <span class="text-[#EF4444]">20 orang</span> di
                             setiap angkatan!</h2>
                         <div class="mt-10">
@@ -530,7 +721,7 @@
                             class="px-8 py-[13px] bg-[#6366F1] text-white font-semibold mt-8 rounded-lg shadow-lg hover:opacity-90">Kirim
                             Permohonan Magang</button>
                         <h2 class="mt-12 font-bold leading-[160%]">Or sign up using:</h2>
-                        <div class="mt-6 flex flex-wrap gap-3">
+                        <div class="mt-6 flex flex-wrap gap-3 mb-10 lg:mb-0">
                             <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
                                     src="assets/icon/logo_google.svg" alt="" class="w-5 h-5"></button>
                             <button class="p-3 bg-gray-200 rounded-md hover:bg-gray-300"><img
@@ -548,8 +739,9 @@
         <!-- Akhir Bagian Gabung -->
 
         <!-- Bagian Footer -->
-        <div class="max-w-[1296px] mx-auto pt-[110px] flex flex-wrap pb-16">
-            <div class="w-[33%]">
+        <div
+            class="max-w-[1296px] mx-auto pt-[110px] flex flex-wrap pb-16 px-5 lg:px-0 justify-center lg:justify-normal">
+            <div class="lg:w-[33%] mb-10 lg:mb-0">
                 <div class="flex items-center gap-[7.5px]">
                     <img src="assets/image/Group 2.svg" alt="" class="max-w-[47px] max-h-[47px]">
                     <h2 class="font-bold text-[20px]">Silicon</h2>
@@ -564,15 +756,16 @@
                     <div
                         class="flex items-center pl-4 py-[11px] border-[1px] border-gray-300 w-[70%] rounded-l-md gap-2">
                         <img src="assets/icon/iconmail.svg" alt="" class="w-5 h-5 ">
-                        <input type="text" placeholder="Your Email" class="outline-none p-0 text-sm border-none">
+                        <input type="text" placeholder="Your Email"
+                            class="outline-none p-0 text-sm border-none w-[80%]">
                     </div>
-                    <button class="bg-[#6366F1] w-[30%] py-[11px] -ml-1
+                    <button class="bg-[#6366F1] w-[33%] py-[11px] -ml-1
                          rounded-r-md text-sm font-semibold leading-[160%] text-white">Subscribe</button>
                 </form>
             </div>
-            <div class="w-[40%] ml-[220px]">
-                <div class="grid grid-cols-3">
-                    <div class="flex flex-col space-y-2">
+            <div class="lg:w-[40%] lg:ml-[220px] w-full flex flex-wrap ">
+                <div class=" flex w-full">
+                    <div class="flex flex-col space-y-2 w-[30%]">
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Home</a>
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">About</a>
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Courses</a>
@@ -580,19 +773,19 @@
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Blog</a>
                     </div>
 
-                    <div class="flex flex-col space-y-2">
+                    <div class="flex flex-col space-y-2 w-[30%]">
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Facebook</a>
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Linkedin</a>
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Twitter</a>
                         <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Instagram</a>
                     </div>
 
-                    <div>
+                    <div class="w-[30%] ">
                         <h2 class="text-sm font-semibold">Contact Us</h2>
                         <a href="" class="text-blue-700 underline">example@gmail.com</a>
                     </div>
                 </div>
-                <div class="flex flex-col mt-10 space-y-2">
+                <div class="flex flex-col lg:mt-10 mt-2 lg:text-left lg:mx-0 space-y-2 mx-auto text-center">
                     <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Terms & Conditions</a>
                     <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Privacy Policy</a>
                 </div>
@@ -622,6 +815,12 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 
     <script>
         // ask = select
@@ -657,6 +856,17 @@
         })
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.from(".magang", {
+            delay: 1,
+            duration: 4,
+            text: ""
+        });
+    </script>
 
 </body>
 
