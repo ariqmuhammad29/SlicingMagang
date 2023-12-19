@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-[1920px]">
+
+        <!-- Bagian Navbar -->
+        <div class="flex items-center gap-2 lg:py-2  max-w-[1296px] h-[76px] mx-auto px-5 lg:px-0">
+            <img src="/assets/image/Group 2.svg" alt="" class="w-[47px] h-[44px]">
+            <h1 class="font-bold text-[20px]">Silicon</h1>
+            <ul class="lg:flex items-center gap-6 ml-8 hidden">
+                <li><a href="#ask" class="font-semibold text-slate-700 hover:text-slate-500">Courses</a></li>
+                <li><a href="#" class="font-semibold text-slate-700 hover:text-slate-500">How It Works</a></li>
+                <li><a href="#" class="font-semibold text-slate-700 hover:text-slate-500">What Students Say</a>
+                </li>
+                <li><a href="#" class=" font-semibold text-slate-700 hover:text-slate-500">Contact</a></li>
+            </ul>
+            <div class="lg:flex items-center ml-auto gap-4 hidden">
+                <a href="">
+                    <button
+                        class="flex items-center text-sm gap-2 font-semibold border-[1px] py-[9px] px-5 rounded text-[#6366F1]">
+                        <img src="/assets/icon/icon-signin.png" alt="">
+                        Sign In
+                    </button>
+                </a>
+                <a href="">
+                    <button
+                        class="flex items-center text-sm gap-2 font-semibold py-[9px] px-5 rounded bg-[#6366F1] text-white">
+                        <img src="/assets/icon/icon-signup.png" alt="">
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            <button id="dropdownButton" class="p-4 lg:hidden text-black ml-auto relative ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-6 h-6 dark:text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+
+
+                <ul id="dropdownList" class="hidden bg-white shadow-xl mt-2 w-40 rounded-2xl absolute right-0">
+                    <div class="m-1 space-y-2">
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">Courses</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">How It Works</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">What Students Say</a>
+                        </li>
+                        <li>
+                            <a class="text-slate-500 hover:text-[#007A98] hover:font-bold" href="">Contact</a>
+                        </li>
+                        <hr>
+                        <li class="flex gap-2 w-full justify-center">
+                            <a class="text-slate-500 font-semibold hover:text-[#007A98] hover:font-bold" href="">Sign
+                                In</a>
+                            <a class="text-slate-500 font-semibold hover:text-[#007A98] hover:font-bold" href="">Sign
+                                Up</a>
+                        </li>
+                        <li>
+
+                        </li>
+                    </div>
+                </ul>
+            </button>
+        </div>
+        <!-- Akhir Bagian Navbar -->
+
+        <!-- Bagian Content -->
+        <div class="max-w-[1296px] mx-auto">
+
+            <div class="flex flex-wrap items-center mt-[62px]">
+                <h2 class="text-[40px] mx-auto mb-2 lg:mb-0 lg:mx-0 font-bold w-full md:w-fit text-center">Courses</h2>
+                <div class="flex flex-wrap lg:ml-auto items-center justify-center mx-auto lg:mx-0 ">
+
+                    <div class="px-4 py-[11px] border-[1px] border-gray-300 rounded-md mr-6">
+                        <select name="" id="" class="md:w-[208px] outline-none">
+                            <option value="" class="text-sm text-gray-700 ">All Categories</option>
+                        </select>
+                    </div>
+                    <div
+                        class="md:w-[400px] w-[40%] flex items-center border-[1px] border-gray-300 px-4 py-[11px] rounded-md">
+                        <input type="text" class="w-[95%] outline-none" placeholder="Search courses">
+                        <img src="assets/icon/bx-search.png" class="w-5 h-5" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 flex flex-wrap justify-between mb-10 px-5 lg:px-0">
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses1.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">Fullstack Web Developer Course from Scratch</h2>
+                        <h2 class="text-sm text-gray-700">By Robert Fox</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$12.50</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses2.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">HTML, CSS, Phyton, JavaScript Web Developer</h2>
+                        <h2 class="text-sm text-gray-700">By Jenny Wilson & Marvin McKinney</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$15.99</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">160 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">92% (3.1K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses3.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">The Complete Front-End Web Development Course</h2>
+                        <h2 class="text-sm text-gray-700">By Albert Flores</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$9.99</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">100 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">98% (2.7K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses4.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">iOS & Swift - The Complete iOS App Development
+                            Course</h2>
+                        <h2 class="text-sm text-gray-700">By Marvin McKinney</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$15.99</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">160 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">92% (3.1K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses5.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">Data Science & Machine Learning with Python</h2>
+                        <h2 class="text-sm text-gray-700">By Esther Howard</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$11.20</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses6.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">Creative CSS Drawing Course: Make Art With CSS</h2>
+                        <h2 class="text-sm text-gray-700">By Robert Fox</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$10.50</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses7.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">Blender Character Creator v2.0 for Video Games
+                            Design</h2>
+                        <h2 class="text-sm text-gray-700">By Ralph Edwards</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$18.99</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses8.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">The Ultimate Guide to 2D Mobile Game Development
+                            with Unity</h2>
+                        <h2 class="text-sm text-gray-700">By Albert Flores</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$12.99</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="lg:w-[32%] md:w-[50%] w-full mb-10 shadow pb-6">
+                    <div class="w-full">
+                        <div class="relative">
+                            <img src="assets/image/imagecourses9.png" class="rounded w-full object-cover h-[240px]"
+                                alt="">
+                            <div class="absolute top-[25px] right-[25px] w-fit">
+                                <a href="">
+                                    <div class="p-[9px] rounded-full bg-white hover:bg-slate-200">
+                                        <img src="assets/icon/bookmark.png" class=" w-[18px] h-[18px] " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 mt-6 mx-auto space-y-2">
+                        <h2 class="text-xl font-bold leading-[140%]">Learn JMETER from Scratch on Live Apps-Performance
+                            Testing</h2>
+                        <h2 class="text-sm text-gray-700">By Jenny Wilson</h2>
+                        <h2 class="text-lg font-semibold text-[#6366F1]">$14.50</h2>
+                        <hr class="border-[#E2E5F1] mt-4 px-6">
+                    </div>
+
+
+
+
+                    <ul class="flex items-center px-6 mt-6 gap-6">
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-time-five.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">220 hours</h2>
+                        </li>
+
+                        <li class="flex items-center gap-1">
+                            <img src="assets/icon/bx-like.png" class="w-5 h-5" alt="">
+                            <h2 class="text-sm text-gray-400">94% (4.2K)</h2>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Akhir Bagian Content -->
+
+        <!-- Bagian Get Started -->
+        <div class="max-w-[1920px] bg-gray-200">
+            <div class="max-w-[1296px] mx-auto flex items-center px-[110px] py-8 flex-wrap md:flex-nowrap">
+                <div class="w-[526px] mr-6 flex flex-wrap justify-center mb-4 md:mb-0 md:justify-normal">
+                    <h2 class="text-2xl text-gray-700 mb-4 text-center md:text-left">
+                        Ready to get started?
+                    </h2>
+                    <h2 class="text-[40px] font-bold mb-10 leading-[130%] text-center md:text-left">
+                        Take Your <span class="text-[#6366F1]">Skills</span> to the <br>Next Level
+                    </h2>
+                    <button class="text-white bg-[#6366F1] px-8 py-[13px] rounded-lg">Work with us</button>
+                </div>
+                <div class="lg:px-[76px] px-5 py-3 ml-auto">
+                    <img src="assets/image/groupGetReady.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Bagian Get Started -->
+
+        <!-- Bagian Footer -->
+        <div
+            class="max-w-[1296px] mx-auto pt-[110px] flex flex-wrap pb-16 px-5 lg:px-0 justify-center lg:justify-normal">
+            <div class="lg:w-[33%] mb-10 lg:mb-0">
+                <div class="flex items-center gap-[7.5px]">
+                    <img src="assets/image/Group 2.svg" alt="" class="max-w-[47px] max-h-[47px]">
+                    <h2 class="font-bold text-[20px]">Silicon</h2>
+                </div>
+                <p class="mt-6 text-sm leading-[160%] text-slate-500">
+                    Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae
+                    nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum
+                    dolor ullamcorper sodales ultrices eros.
+                </p>
+                <h2 class="mt-10 text-sm font-bold leading-[160%]">Subscribe to our newsletter</h2>
+                <form action="" class="flex items-center mt-2 w-full">
+                    <div
+                        class="flex items-center pl-4 py-[11px] border-[1px] border-gray-300 w-[70%] rounded-l-md gap-2">
+                        <img src="assets/icon/iconmail.svg" alt="" class="w-5 h-5 ">
+                        <input type="text" placeholder="Your Email"
+                            class="outline-none p-0 text-sm border-none w-[80%]">
+                    </div>
+                    <button class="bg-[#6366F1] w-[33%] py-[11px] -ml-1
+                     rounded-r-md text-sm font-semibold leading-[160%] text-white">Subscribe</button>
+                </form>
+            </div>
+            <div class="lg:w-[40%] lg:ml-[220px] w-full flex flex-wrap ">
+                <div class=" flex w-full">
+                    <div class="flex flex-col space-y-2 w-[30%]">
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Home</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">About</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Courses</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Careers</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Blog</a>
+                    </div>
+
+                    <div class="flex flex-col space-y-2 w-[30%]">
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Facebook</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Linkedin</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Twitter</a>
+                        <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Instagram</a>
+                    </div>
+
+                    <div class="w-[30%] ">
+                        <h2 class="text-sm font-semibold">Contact Us</h2>
+                        <a href="" class="text-blue-700 underline">example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:mt-10 mt-2 lg:text-left lg:mx-0 space-y-2 mx-auto text-center">
+                    <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Terms & Conditions</a>
+                    <a href="" class="text-sm leading-[160%] hover:text-blue-600 font-semibold">Privacy Policy</a>
+                </div>
+            </div>
+            <h2 class="mt-[72px] text-xs leading-[160%] text-slate-400">2021. All rihgts reserved. Silicon Template</h2>
+        </div>
+        <!-- Akhir Bagian Footer -->
+    </div>
+
+    <script>
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownList = document.getElementById('dropdownList')
+
+        dropdownButton.addEventListener('click', () => {
+            if (dropdownList.classList.contains('hidden')) {
+                dropdownList.classList.remove('hidden')
+            } else {
+                dropdownList.classList.add('hidden')
+            }
+        })
+
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownList.contains(event.target)) {
+                dropdownList.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
